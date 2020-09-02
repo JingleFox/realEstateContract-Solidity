@@ -49,7 +49,7 @@ contract realEstateContract {
     
     //Request Change of Ownership..
 	function changeOwnership(uint id, address _buyer) public isOwner returns (address, STATUS status, bool _statusChange) {
-        // _buyer = 0x814D874D527eE258c315fE86B084Df58887cE5dF; //have to change the address to simulate the ether address on that day;
+	    // _buyer = 0x814D874D527eE258c315fE86B084Df58887cE5dF; //have to change the address to simulate the ether address on that day;
 	    // _buyer == address(0);
 		require(property[id].status == STATUS.PENDING);
 	    require(property[id].ownerAddr != _buyer);
